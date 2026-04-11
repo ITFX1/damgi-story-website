@@ -56,6 +56,8 @@ body {
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 /* ================= SECTIONS ================= */
 .section {
@@ -159,12 +161,16 @@ button:hover {
 /* title */
 #chapterTitle {
     color: #00ffcc;
+    h1, h2 {
+    font-size: 1.6rem;
+    }
 }
 
 /* text */
 #chapterText {
-    margin-top: 15px;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    white-space: pre-line;
 }
 
 /* ================= BIRTHDAY ================= */
@@ -240,15 +246,19 @@ button:hover {
     background-blend-mode: darken;
 }
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 28px;
+    html {
+        font-size: 20px;
     }
 
     #chapterText {
-        font-size: 14px;
+        font-size: 1.3rem;
     }
 
-    button {
-        width: 100%;
+    h1, h2 {
+        font-size: 1.8rem;
     }
+}
+
+html {
+    font-size: 18px;
 }
