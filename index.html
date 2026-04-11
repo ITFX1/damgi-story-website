@@ -2,35 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <title>DAMGI DAY ❤️</title>
-
+    <title>DAMGI DAY❤️</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    
 <body>
 
-    <div class="section">
+    <div class="container">
+        <h1>DAMGI ❤️</h1>
+        <p>Enter password to unlock...</p>
 
-        <div class="container">
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Unlock</button>
 
-            <h1>DAMGI ❤️</h1>
-
-            <p class="login-text">
-                Enter password to unlock the story...
-            </p>
-
-            <input type="password" id="password" placeholder="Enter password">
-
-            <button onclick="checkPassword()">Unlock</button>
-
-            <p id="error"></p>
-
-        </div>
-
+        <p id="error"></p>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
