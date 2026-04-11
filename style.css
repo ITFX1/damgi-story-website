@@ -64,7 +64,7 @@ input {
 /* ================= BUTTON ================= */
 button {
     margin-top: 15px;
-    padding: 14px 22px;
+    padding: 14px 24px;
     border-radius: 25px;
     border: none;
     background: linear-gradient(135deg, #00ffcc, #0099ff);
@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 /* ================= HOME ================= */
@@ -115,7 +115,7 @@ button:hover {
     max-width: 500px;
 }
 
-/* ================= STORY ================= */
+/* ================= STORY PAGE ================= */
 #story {
     min-height: 100vh;
     background:
@@ -145,11 +145,10 @@ button:hover {
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    padding: 15px;
 }
 
 .chapter-card:hover {
-    transform: scale(1.06);
+    transform: scale(1.07);
     box-shadow: 0 15px 35px rgba(0,255,204,0.2);
 }
 
@@ -175,26 +174,25 @@ button:hover {
 .chapter-box {
     position: relative;
     z-index: 1;
-    width: 95%;
-    max-width: 750px;
+    width: 92%;
+    max-width: 700px;
     padding: 25px;
     background: rgba(0,0,0,0.45);
     border-radius: 12px;
 }
 
-/* ================= TEXT FIX (IMPORTANT) ================= */
+/* ================= TEXT SIZE FIX (IMPORTANT) ================= */
 #chapterTitle {
-    font-size: 32px;
+    font-size: 30px;
     color: #00ffcc;
 }
 
 #chapterText {
-    font-size: 24px;   /* 🔥 BIG TEXT FIX */
-    line-height: 2;
+    font-size: 22px;   /* 🔥 BIG TEXT FIX */
+    line-height: 1.9;
     white-space: pre-line;
-    max-height: 75vh;
+    max-height: 70vh;
     overflow-y: auto;
-    padding-right: 8px;
 }
 
 /* ================= BIRTHDAY ================= */
@@ -204,12 +202,11 @@ button:hover {
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
+    .hero h1 { font-size: 38px; }
+    .hero p { font-size: 20px; }
 
-.hero h1 { font-size: 38px; }
-.hero p { font-size: 20px; }
+    #chapterText { font-size: 20px; }
+    #chapterTitle { font-size: 24px; }
 
-#chapterTitle { font-size: 24px; }
-#chapterText { font-size: 20px; }
-
-button { font-size: 16px; }
+    button { font-size: 16px; }
 }
