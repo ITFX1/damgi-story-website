@@ -46,20 +46,25 @@ button:hover {
     color: red;
     margin-top: 10px;
 }
-/* ================= GENERAL ================= */
+/* ================= GENERAL =================*/
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: black;
     color: white;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
 }
-
 /* ================= SECTIONS ================= */
 .section {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 /* ================= HOME ================= */
@@ -123,10 +128,14 @@ button:hover {
 
 /* ================= CHAPTER PAGE ================= */
 #chapterPage {
+    width: 100%;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* overlay dark effect */
@@ -142,7 +151,7 @@ button:hover {
 .chapter-box {
     position: relative;
     z-index: 1;
-    max-width: 400px;
+    max-width: 500px;
     padding: 20px;
     text-align: center;
 }
@@ -211,4 +220,35 @@ button:hover {
     line-height: 1.6;
     font-size: 15px;
     padding-right: 5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    #chapterText {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
 }
