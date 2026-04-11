@@ -235,3 +235,24 @@ button:hover {
         font-size: 15px;
     }
 }
+
+#story {
+    min-height: 100vh;
+    background: url("https://res.cloudinary.com/dn0250gby/image/upload/v1775893734/img2_durf24.jpg") center/cover no-repeat;
+    position: relative;
+    flex-direction: column;
+}
+#story::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+
+#story * {
+    position: relative;
+    z-index: 1;
+}
