@@ -371,6 +371,7 @@ button:hover {
     z-index: 9999;
     animation: fadeOut 2.5s ease forwards;
     animation-delay: 2s;
+    pointer-events: none;
 }
 
 #intro-screen h1 {
@@ -414,4 +415,14 @@ button:hover {
 
 .hero, #story, #chapterPage {
     background-attachment: fixed;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
 }
