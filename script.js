@@ -6,7 +6,8 @@ console.log("Entered password:", password);
 
 if (password === "DAMGI") {  
     window.location.href = "home.html";  
-} else {  
+} 
+else {  
     document.getElementById("error").innerText = "Wrong password...";  
 }
 
