@@ -1,9 +1,12 @@
+/* ================= PASSWORD ================= */
 function checkPassword() {
     let password = document.getElementById("password").value;
 
     console.log("Entered password:", password);
 
-     else {
+    if (password === "DAMGI") {
+        window.location.href = "home.html";
+    } else {
         document.getElementById("error").innerText = "Wrong password...";
     }
 }
@@ -198,7 +201,7 @@ function openChapter(index) {
 function typeWriter(text) {
 
     let i = 0;
-    let speed = 20; // ushobora kugabanya cyangwa kongera
+    let speed = 15; // ushobora kugabanya cyangwa kongera
 
     let box = document.getElementById("chapterText");
     box.innerHTML = "";
@@ -213,17 +216,24 @@ function typeWriter(text) {
 
     typing();
 }
-    // background image
+function openChapter(index) {
+
+    let c = chapters[index];
+
+    document.getElementById("chapterTitle").innerText = c.title;
+
+    typeWriter(c.text);
+
     let page = document.getElementById("chapterPage");
     page.style.backgroundImage = "url('" + c.bg + "')";
 
-    // music auto play
     let music = document.getElementById("music");
     music.src = c.song;
     music.play().catch(()=>{});
 
     showSection("chapterPage");
 }
+    
 
 /* ================= BACK ================= */
 function backToList() {
