@@ -192,12 +192,6 @@ song: "https://res.cloudinary.com/dn0250gby/video/upload/v1775893844/song9_hf7fj
 
 /* ================= OPEN CHAPTER ================= */
 function openChapter(index) {
-    let page = document.getElementById("chapterPage");
-page.style.opacity = 0;
-
-setTimeout(() => {
-    page.style.opacity = 1;
-}, 100);
 
     let c = chapters[index];
 
