@@ -131,7 +131,7 @@ button:hover {
 .chapter-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
+    gap: 20px;
     width: 95%;
     max-width: 1000px;
     margin-top: 20px;
@@ -149,7 +149,7 @@ button:hover {
 
 .chapter-card:hover {
     transform: scale(1.07);
-    box-shadow: 0 15px 35px rgba(0,255,204,0.2);
+    box-shadow: 0 20px 35px rgba(0,255,204,0.2);
 }
 
 /* ================= CHAPTER PAGE ================= */
@@ -174,30 +174,30 @@ button:hover {
 .chapter-box {
     position: relative;
     z-index: 1;
-    width: 92%;
-    max-width: 700px;
-    padding: 25px;
-    background: rgba(0,0,0,0.45);
+    width: 95%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(0,0,0,0.30);
     border-radius: 12px;
 }
 
 /* ================= TEXT SIZE FIX (IMPORTANT) ================= */
 #chapterTitle {
-    font-size: 30px;
+    font-size: 40px;
     color: #00ffcc;
 }
 
 #chapterText {
-    font-size: 22px;   /* 🔥 BIG TEXT FIX */
-    line-height: 1.9;
+    font-size: 26px;   /* 🔥 BIG TEXT FIX */
+    line-height: 2.1;
     white-space: pre-line;
-    max-height: 70vh;
+    max-height: 80vh;
     overflow-y: auto;
 }
 
 /* ================= BIRTHDAY ================= */
 .card p {
-    font-size: 22px;
+    font-size: 26px;
 }
 
 /* ================= MOBILE ================= */
