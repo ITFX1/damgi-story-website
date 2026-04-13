@@ -1,3 +1,4 @@
+let historyStack = [];
 function checkPassword() {
     let password = document.getElementById("password").value;
 
@@ -34,11 +35,21 @@ function startBirthday() {
 /* ================= NAVIGATION ================= */
 function showSection(section) {
 
-    document.getElementById("home").style.display = "none";
-    document.getElementById("story").style.display = "none";
-    document.getElementById("birthday").style.display = "none";
-    document.getElementById("chapterPage").style.display = "none";
+    // save current visible section
+    let sections = ["home", "story", "birthday", "chapterPage"];
 
+    sections.forEach(sec => {
+        if (document.getElementById(sec).style.display === "flex") {
+            historyStack.push(sec);
+        }
+    });
+
+    // hide all
+    sections.forEach(sec => {
+        document.getElementById(sec).style.display = "none";
+    });
+
+    // show new
     document.getElementById(section).style.display = "flex";
 }
 
@@ -327,4 +338,19 @@ function enterGift() {
             Continue ❤️
         </button>
     `;
+}
+
+function goBack() {
+
+    if (historyStack.length > 0) {
+
+        let last = historyStack.pop();
+
+        document.getElementById("home").style.display = "none";
+        document.getElementById("story").style.display = "none";
+        document.getElementById("birthday").style.display = "none";
+        document.getElementById("chapterPage").style.display = "none";
+
+        document.getElementById(last).style.display = "flex";
+    }
 }
