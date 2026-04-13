@@ -35,14 +35,16 @@ function startBirthday() {
 /* ================= NAVIGATION ================= */
 function showSection(section) {
 
-    // save current visible section
     let sections = ["home", "story", "birthday", "chapterPage"];
 
-    sections.forEach(sec => {
-        if (document.getElementById(sec).style.display === "flex") {
-            historyStack.push(sec);
-        }
-    });
+    // find current visible
+    let current = sections.find(sec => 
+        document.getElementById(sec).style.display !== "none"
+    );
+
+    if (current && current !== section) {
+        historyStack.push(current);
+    }
 
     // hide all
     sections.forEach(sec => {
@@ -302,8 +304,7 @@ function startExperience() {
 
     birthday.innerHTML = `
     
-    <button class="back-btn" onclick="showSection('home')">⬅ Back</button>
-    
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
         <div class="birthday-hero">
             <h1>🎬 Welcome to your story ❤️</h1>
 
@@ -318,39 +319,18 @@ function startExperience() {
         </div>
     `;
 }
-function enterGift() {
-
-    let intro = document.querySelector(".birthday-intro");
-
-    intro.innerHTML = `
-        <button class="back-btn" onclick="showSection('home')">⬅ Back</button>
-
-        <h1 style="font-size:38px; color:#ff4d88;">
-            Happy Birthday Aliane ❤️
-        </h1>
-
-        <p style="margin-top:20px; font-size:20px;">
-            Today is your day...  
-            and this is something made just for you ✨
-        </p>
-
-        <button onclick="startExperience()">
-            Continue ❤️
-        </button>
-    `;
-}
 
 function goBack() {
 
-    if (historyStack.length > 0) {
+    let sections = ["home", "story", "birthday", "chapterPage"];
 
-        let last = historyStack.pop();
+    if (historyStack.length === 0) return;
 
-        document.getElementById("home").style.display = "none";
-        document.getElementById("story").style.display = "none";
-        document.getElementById("birthday").style.display = "none";
-        document.getElementById("chapterPage").style.display = "none";
+    let last = historyStack.pop();
 
-        document.getElementById(last).style.display = "flex";
-    }
+    sections.forEach(sec => {
+        document.getElementById(sec).style.display = "none";
+    });
+
+    document.getElementById(last).style.display = "flex";
 }
