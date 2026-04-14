@@ -256,6 +256,8 @@ function startBirthday() {
     let birthday = document.getElementById("birthday");
 
     birthday.innerHTML = `
+    <div class="birthday-content">
+    
         <h1>🎁 Hey you ❤️</h1>
 
         <p style="margin-top:15px;">
@@ -269,6 +271,7 @@ function startBirthday() {
         <button onclick="showSection('home')" style="margin-top:10px;">
             ⬅ Back
         </button>
+        </div>
     `;
 
     showSection("birthday");
