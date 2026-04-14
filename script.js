@@ -325,7 +325,7 @@ you will always have a special place in my heart 🤍
 Enjoy your day... you deserve everything ✨
     `;
 
-    typeWriterEffect(message, "birthdayText", 35);
+    typeWriterEffect(message, "birthdayText", 40);
 
     // 🎵 MUSIC
     let music = document.getElementById("music");
