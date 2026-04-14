@@ -21,7 +21,7 @@
 
         <div class="btn-group">
     <button onclick="showSection('story')">📖 Story</button>
-    <button onclick="showSection('birthday')">🎉 Birthday</button>
+    <button onclick="startBirthday()">🎉 Birthday</button>
         </div>
     </div>
 
@@ -125,27 +125,22 @@
 </div>
 
 <!-- ================= BIRTHDAY ================= -->
-<div id="birthday" class="section" style="display:none;">
+<div id="birthday" class="section" style="display:none; flex-direction:column;">
 
-    <!-- 🎬 INTRO SCREEN -->
-    <div class="birthday-intro">
-        
-        <button onclick="goBack()" style="position:absolute; top:20px; left:20px;">
+    <h1>🎉 Birthday Surprise ❤️</h1>
+
+    <p style="margin-top:15px;">
+        I have something special for you...
+    </p>
+
+    <button onclick="startBirthday()" style="margin-top:20px;">
+        ▶ Start Watching
+    </button>
+
+    <button onclick="showSection('home')" style="margin-top:15px;">
         ⬅ Back
-        </button>
-        <button onclick="birthdayStep=1; enterGift()">🎁 Open Your Gift</button>
-        <button onclick="birthdayStep=2; startExperience()">Continue ❤️</button>
-        <button onclick="birthdayStep=3; startBirthday()">▶ Start Watching</button>
-        
-        <h1 class="intro-text">This is not just a birthday...</h1>
+    </button>
 
-        <p class="intro-sub">
-            It's a moment... a memory... something special ❤️
-        </p>
-
-        <button onclick="enterGift()">🎁 Open Your Gift</button>
-    
-    </div>
 </div>
 
 
