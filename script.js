@@ -37,21 +37,16 @@ function showSection(section) {
 
     let sections = ["home", "story", "birthday", "chapterPage"];
 
-    // find current visible
-    let current = sections.find(sec => 
-        document.getElementById(sec).style.display !== "none"
-    );
-
-    if (current && current !== section) {
-        historyStack.push(current);
-    }
-
-    // hide all
     sections.forEach(sec => {
-        document.getElementById(sec).style.display = "none";
+        let el = document.getElementById(sec);
+
+        if (el.style.display !== "none" && sec !== section) {
+            historyStack.push(sec);
+        }
+
+        el.style.display = "none";
     });
 
-    // show new
     document.getElementById(section).style.display = "flex";
 }
 
@@ -322,11 +317,14 @@ function startExperience() {
 
 function goBack() {
 
-    let sections = ["home", "story", "birthday", "chapterPage"];
-
-    if (historyStack.length === 0) return;
+    if (historyStack.length === 0) {
+        showSection("home");
+        return;
+    }
 
     let last = historyStack.pop();
+
+    let sections = ["home", "story", "birthday", "chapterPage"];
 
     sections.forEach(sec => {
         document.getElementById(sec).style.display = "none";
