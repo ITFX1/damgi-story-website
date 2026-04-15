@@ -404,9 +404,6 @@ function stopMusic() {
     music.pause();
     music.currentTime = 0;
 }
-function goHome() {
-    stopMusic();
-    showSection("home");
 }
 function startWatching() {
 
