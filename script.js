@@ -21,7 +21,7 @@ function showSection(section) {
     });
     
      document.getElementById(section).style.display = "flex";
-    
+}
 /* ================= CHAPTER DATA ================= */
 let chapters = [ /* 🔥 KEEP ALL YOUR DATA EXACTLY AS IT IS */ 
 {
