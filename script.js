@@ -398,9 +398,9 @@ function startSlider() {
             i = (i + 1) % images.length;
             img.src = images[i];
             img.style.opacity = 1;
-        }, 400);
+        }, 600);
 
-    }, 3000);
+    }, 3500);
 }
 function stopMusic() {
     let music = document.getElementById("music");
@@ -427,7 +427,7 @@ function startWatching() {
     </div>
     `;
 
-    // 🔥 START SUNO MUSIC HERE
+    // 🎵 MUSIC YA SLIDER
     let music = document.getElementById("music");
     music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776099666/June_14_%EF%B8%8F_cjcutn.mp3";
     music.play().catch(()=>{});
@@ -441,13 +441,34 @@ function openFinal() {
     let birthday = document.getElementById("birthday");
 
     birthday.innerHTML = `
-    <div class="birthday-final">
+    <div class="birthday-final" style="
+        background: url('https://res.cloudinary.com/dn0250gby/image/upload/v1776098712/pic2_xqmhyq.jpg') center/cover no-repeat;
+        width:100vw;
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        position:relative;
+    ">
 
-        <h1>🎉 Happy Birthday ❤️</h1>
+        <div style="
+            position:absolute;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.6);
+            top:0;
+            left:0;
+        "></div>
 
-        <p id="birthdayText"></p>
+        <div style="position:relative; z-index:2;">
+            <h1>🎉 Happy Birthday ❤️</h1>
 
-        <button onclick="goHome()">⬅ Back</button>
+            <p id="birthdayText"></p>
+
+            <button onclick="goHome()">⬅ Back</button>
+        </div>
 
     </div>
     `;
@@ -463,7 +484,7 @@ Happy Birthday ✨
 
     typeWriterEffect(message, "birthdayText", 40);
 
-    // 🎵 INSTRUMENTAL
+    // 🎵 FINAL INSTRUMENTAL
     let music = document.getElementById("music");
     music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776197883/Benson_Boone_-_Beautiful_Things___Piano_Cover_by_Pianella_Piano_256k_acywfr.mp3";
     music.play().catch(()=>{});
