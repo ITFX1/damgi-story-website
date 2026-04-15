@@ -378,3 +378,27 @@ Happy Birthday ❤️✨
     music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776099666/June_14_%EF%B8%8F_cjcutn.mp3";
     music.play().catch(()=>{});
 }
+function startSlider() {
+
+    let images = [
+        "https://res.cloudinary.com/dn0250gby/image/upload/v1776098712/pic2_xqmhyq.jpg",
+        "https://res.cloudinary.com/dn0250gby/image/upload/v1776098703/pic3_fwl8sp.jpg",
+        "https://res.cloudinary.com/dn0250gby/image/upload/v1776098702/pic5_auafnm.jpg",
+        "https://res.cloudinary.com/dn0250gby/image/upload/v1776098707/pic7_zvjiyd.jpg",
+        "https://res.cloudinary.com/dn0250gby/image/upload/v1776098714/pic8_eytlw9.jpg"
+    ];
+
+    let i = 0;
+    let img = document.getElementById("slideImg");
+
+    setInterval(() => {
+        img.style.opacity = 0;
+
+        setTimeout(() => {
+            i = (i + 1) % images.length;
+            img.src = images[i];
+            img.style.opacity = 1;
+        }, 400);
+
+    }, 3000);
+}
