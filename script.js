@@ -15,6 +15,8 @@ function checkPassword() {
 let birthdayStep = 0;
 function showSection(section) {
 
+    stopMusic(); // 🔥 VERY IMPORTANT
+
     let sections = ["home", "story", "birthday", "chapterPage"];
 
     sections.forEach(sec => {
@@ -249,47 +251,8 @@ function backToList() {
 
     showSection("story");
 }
-function startBirthday() {
 
-    birthdayStep = 1;
 
-    let birthday = document.getElementById("birthday");
-
-    birthday.innerHTML = `
-    <div class="birthday-content">
-        <h1>🎁 Hey you ❤️</h1>
-        <p>I have something special for you...</p>
-
-        <!-- 🔥 CHANGE HERE -->
-        <button onclick="nextBirthdayStep()">Continue ❤️</button>
-
-        <button onclick="goHome()">⬅ Back</button>
-    </div>
-    `;
-
-    showSection("birthday");
-}
-function nextBirthdayStep() {
-
-    let birthday = document.getElementById("birthday");
-
-    // STEP 2
-    if (birthdayStep === 1) {
-
-        birthdayStep = 2;
-
-        birthday.innerHTML = `
-        <div class="birthday-content">
-
-            <h1>🎬 Welcome...</h1>
-
-            <p>This is not just a page... it's your story ❤️</p>
-
-            <button onclick="nextBirthdayStep()">Start Watching ▶</button>
-
-        </div>
-        `;
-    }
 
     // STEP 3 (FINAL EXPERIENCE)
     else if (birthdayStep === 2) {
@@ -408,87 +371,106 @@ function stopMusic() {
     music.currentTime = 0;
 
 }
+/* ================= BIRTHDAY FLOW CLEAN ================= */
+
+function startBirthday() {
+
+    stopMusic();
+
+    let birthday = document.getElementById("birthday");
+
+    birthday.innerHTML = `
+    <div class="birthday-content">
+        <h1>🎁 Hey you ❤️</h1>
+        <p>I have something special for you...</p>
+
+        <button onclick="goToStartWatching()">Continue ❤️</button>
+        <button onclick="goHome()">⬅ Back</button>
+    </div>
+    `;
+
+    showSection("birthday");
+}
+
+/* STEP 2 */
+function goToStartWatching() {
+
+    let birthday = document.getElementById("birthday");
+
+    birthday.innerHTML = `
+    <div class="birthday-content">
+        <h1>🎬 Welcome...</h1>
+        <p>This is your story ❤️</p>
+
+        <button onclick="startWatching()">Start Watching ▶</button>
+    </div>
+    `;
+}
+
+/* STEP 3 (🔥 FULL SCREEN SLIDER ONLY) */
 function startWatching() {
+
+    stopMusic();
 
     let birthday = document.getElementById("birthday");
 
     birthday.innerHTML = `
     <div class="birthday-full">
 
-        <div class="slider">
-            <img id="slideImg" src="https://res.cloudinary.com/dn0250gby/image/upload/v1776098712/pic2_xqmhyq.jpg">
-        </div>
+        <img id="slideImg" src="https://res.cloudinary.com/dn0250gby/image/upload/v1776098712/pic2_xqmhyq.jpg">
 
         <div class="controls">
-            <button onclick="openFinal()">💌 Open Final Message</button>
+            <button onclick="openFinalMessage()">💌 Open Final Message</button>
             <button onclick="goHome()">⬅ Back</button>
         </div>
 
     </div>
     `;
 
-    // 🎵 MUSIC YA SLIDER
+    startSlider();
+
     let music = document.getElementById("music");
     music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776099666/June_14_%EF%B8%8F_cjcutn.mp3";
     music.play().catch(()=>{});
-
-    startSlider();
 }
-function openFinal() {
 
-    stopMusic(); // 🔥 stop slider music
+/* STEP 4 (FINAL MESSAGE PAGE) */
+function openFinalMessage() {
+
+    stopMusic();
 
     let birthday = document.getElementById("birthday");
 
     birthday.innerHTML = `
-    <div class="birthday-final" style="
-        background: url('https://res.cloudinary.com/dn0250gby/image/upload/v1776098712/pic2_xqmhyq.jpg') center/cover no-repeat;
-        width:100vw;
-        height:100vh;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        position:relative;
-    ">
+    <div class="final-message-page">
 
-        <div style="
-            position:absolute;
-            width:100%;
-            height:100%;
-            background:rgba(0,0,0,0.6);
-            top:0;
-            left:0;
-        "></div>
-
-        <div style="position:relative; z-index:2;">
-            <h1>🎉 Happy Birthday ❤️</h1>
-
-            <p id="birthdayText"></p>
-
-            <button onclick="goHome()">⬅ Back</button>
+        <div class="message-box">
+            <h2>For You ❤️</h2>
+            <p id="finalText"></p>
         </div>
+
+        <button class="back-btn" onclick="startWatching()">⬅ Back</button>
 
     </div>
     `;
 
-    let message = `
-You are one of the most beautiful things ❤️  
+    let text = `
+Today is not just your birthday... 🎂  
+it's a reminder of how special you are ❤️  
 
 No matter what changed...  
-you will always stay in my heart 🤍  
+you will always have a place in my heart 🤍  
 
-Happy Birthday ✨
+Happy Birthday ❤️✨
     `;
 
-    typeWriterEffect(message, "birthdayText", 40);
+    typeWriterEffect(text, "finalText", 40);
 
-    // 🎵 FINAL INSTRUMENTAL
     let music = document.getElementById("music");
     music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776197883/Benson_Boone_-_Beautiful_Things___Piano_Cover_by_Pianella_Piano_256k_acywfr.mp3";
     music.play().catch(()=>{});
 }
+
 function goHome() {
     stopMusic();
     showSection("home");
