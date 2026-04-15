@@ -12,7 +12,6 @@ function checkPassword() {
 /* ================= NAVIGATION ================= */
 
 function showSection(section) {
-let birthdayStep = 0;
 
     let sections = ["home", "story", "birthday", "chapterPage"];
 
