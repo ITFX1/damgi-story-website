@@ -15,8 +15,6 @@ function checkPassword() {
 let birthdayStep = 0;
 function showSection(section) {
 
-    stopMusic(); // 🔥 STOP MUSIC EVERY TIME YOU CHANGE PAGE
-
     let sections = ["home", "story", "birthday", "chapterPage"];
 
     sections.forEach(sec => {
