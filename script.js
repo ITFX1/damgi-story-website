@@ -355,3 +355,25 @@ function startBirthdayMusic() {
     music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776197883/Benson_Boone_-_Beautiful_Things___Piano_Cover_by_Pianella_Piano_256k_acywfr.mp3";
     music.play().catch(()=>{});
 }
+function playFinalMessage() {
+
+    let message = `
+Today is not just your birthday... 🎂  
+it's a reminder of how special you are ❤️  
+
+Through every memory... every moment...  
+you have been something I can never replace 🤍  
+
+No matter where life takes us...  
+you will always be part of my story 🌙  
+
+Happy Birthday ❤️✨
+    `;
+
+    typeWriterEffect(message, "birthdayText", 40);
+
+    // 🎵 FINAL MUSIC (song ya DAMGI cyangwa iyindi)
+    let music = document.getElementById("music");
+    music.src = "SHYIRAMO_LINK_YA_FINAL_SONG";
+    music.play().catch(()=>{});
+}
