@@ -384,28 +384,3 @@ Happy Birthday ❤️✨
     music.src = "SHYIRAMO_LINK_YA_FINAL_SONG";
     music.play().catch(()=>{});
 }
-let images = [
-"https://res.cloudinary.com/dn0250gby/image/upload/v1776098712/pic2_xqmhyq.jpg",
-"https://res.cloudinary.com/dn0250gby/image/upload/v1776098703/pic3_fwl8sp.jpg",
-"https://res.cloudinary.com/dn0250gby/image/upload/v1776098702/pic5_auafnm.jpg",
-"https://res.cloudinary.com/dn0250gby/image/upload/v1776098707/pic7_zvjiyd.jpg",
-"https://res.cloudinary.com/dn0250gby/image/upload/v1776098714/pic8_eytlw9.jpg"
-];
-
-let index = 0;
-
-function startSlider() {
-
-    let img = document.getElementById("slideImg");
-
-    setInterval(() => {
-        index = (index + 1) % images.length;
-        img.style.opacity = 0;
-
-        setTimeout(() => {
-            img.src = images[index];
-            img.style.opacity = 1;
-        }, 500);
-
-    }, 3000);
-}
