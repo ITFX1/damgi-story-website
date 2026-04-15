@@ -259,7 +259,10 @@ function startBirthday() {
     <div class="birthday-content">
         <h1>🎁 Hey you ❤️</h1>
         <p>I have something special for you...</p>
-        <button onclick="startWatching()">Continue ❤️</button>
+
+        <!-- 🔥 CHANGE HERE -->
+        <button onclick="nextBirthdayStep()">Continue ❤️</button>
+
         <button onclick="goHome()">⬅ Back</button>
     </div>
     `;
@@ -465,4 +468,7 @@ Happy Birthday ✨
     music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776197883/Benson_Boone_-_Beautiful_Things___Piano_Cover_by_Pianella_Piano_256k_acywfr.mp3";
     music.play().catch(()=>{});
 }
-
+function goHome() {
+    stopMusic();
+    showSection("home");
+}
