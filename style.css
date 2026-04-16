@@ -525,14 +525,16 @@ html, body {
 }
 
 .controls {
-    position: fixed;   /* 🔥 important */
-    bottom: 20px;
+    position: fixed;
+    bottom: 80px; /* 🔥 yazamutse neza */
     left: 0;
     width: 100%;
+    
     display: flex;
     justify-content: center;
     gap: 15px;
-    z-index: 9999;
+
+    z-index: 99999; /* 🔥 hejuru ya byose */
 }
 
 .controls button {
