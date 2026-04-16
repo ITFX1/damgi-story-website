@@ -342,9 +342,9 @@ function startWatching() {
         <img id="slideImg" src="https://res.cloudinary.com/dn0250gby/image/upload/v1776098712/pic2_xqmhyq.jpg">
 
         <div class="controls">
-            <button onclick="openFinalMessage()">💌 Open Final Message</button>
-            <button onclick="goHome()">⬅ Back</button>
-        </div>
+    <button class="final-btn" onclick="openFinalMessage()">💌 Open</button>
+    <button class="back-btn-fixed" onclick="goHome()">⬅ Back</button>
+</div>
 
     </div>
     `;
