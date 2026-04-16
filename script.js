@@ -392,7 +392,7 @@ Happy Birthday ❤️✨
     typeWriterEffect(message, "birthdayText", 40);
 
     let music = document.getElementById("music");
-    music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776197883/Benson_Boone_-_Beautiful_Things___Piano_Cover_by_Pianella_Piano_256k_acywfr.mp3";
+    music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776099666/June_14_%EF%B8%8F_cjcutn.mp3";
     music.play().catch(()=>{});
 }
 function goHome() {
