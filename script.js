@@ -293,13 +293,6 @@ function startSlider() {
         }, 600);
 
     }, 3500);
-}
-
-/* ================= GO HOME ================= */
-function goHome() {
-    stopMusic();
-    showSection("home");
-}
 
 /* ================= BIRTHDAY SYSTEM ================= */
 
@@ -405,3 +398,8 @@ Happy Birthday ❤️✨
     music.src = "https://res.cloudinary.com/dn0250gby/video/upload/v1776099666/June_14_%EF%B8%8F_cjcutn.mp3";
     music.play().catch(()=>{});
 }
+function goHome() {
+    stopMusic();
+    showSection("home");
+}
+
