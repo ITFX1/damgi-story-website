@@ -19,8 +19,8 @@ function showSection(section) {
         let el = document.getElementById(sec);
         if (el) el.style.display = "none";
     });
-    let active = document.getElementById(section);
-    if (active) active.style.display = "flex";
+    let target = document.getElementById(section);
+    if (target) target.style.display = "flex";
 }
 /* ================= CHAPTER DATA ================= */
 let chapters = [ /* 🔥 KEEP ALL YOUR DATA EXACTLY AS IT IS */ 
@@ -402,4 +402,11 @@ function goHome() {
     stopMusic();
     showSection("home");
 }
+    function stopMusic() {
+    let music = document.getElementById("music");
+    if (music) {
+        music.pause();
+        music.currentTime = 0;
+    }
+    }
 
