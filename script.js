@@ -255,13 +255,17 @@ function typeWriterEffect(text, elementId, speed = 5) {
     el.innerHTML = "";
 
     function typing() {
-        if (i < text.length) {
-            el.innerHTML += text.charAt(i);
-            i++;
 
-            requestAnimationFrame(() => {
-                setTimeout(typing, speed);
-            });
+        if (i < text.length) {
+
+            // 🔥 write multiple characters at once
+            let chunkSize = 3; // 👉 hindura 3 → 5 niba ushaka faster
+
+            el.innerHTML += text.substring(i, i + chunkSize);
+
+            i += chunkSize;
+
+            setTimeout(typing, speed);
         }
     }
 
