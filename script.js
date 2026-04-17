@@ -248,7 +248,7 @@ function backToList() {
 
 
 /* ================= TYPEWRITER EFFECT (GENERAL) ================= */
-function typeWriterEffect(text, elementId, speed = 30) {
+function typeWriterEffect(text, elementId, speed = 5) {
 
     let i = 0;
     let el = document.getElementById(elementId);
