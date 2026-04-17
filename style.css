@@ -445,8 +445,7 @@ button { font-size: 16px; }
     font-size: 36px; /* 🔥 BIG */
     font-weight: 900;
     letter-spacing: 2px;
-
-    color: #ffffff;
+    color: transparent;
 
     /* 🔥 GLOW EFFECT */
     text-shadow: 
