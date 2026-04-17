@@ -338,6 +338,11 @@ function startWatching() {
 
     birthday.innerHTML = `
     <div class="birthday-full">
+    
+     <!-- 🔥 TITLE PINNED -->
+    <div class="birthday-title">
+        June 14 ❤️ <br> Happy Birthday to You 🎉 🎶🎧
+    </div>
 
         <img id="slideImg" src="https://res.cloudinary.com/dn0250gby/image/upload/v1776098712/pic2_xqmhyq.jpg">
 
