@@ -392,13 +392,10 @@ function openFinalMessage() {
     let message = `
 Today is not just your birthday... 🎂  
 it's a reminder of how special you are ❤️  
-
 Through every memory... every moment...  
 you have been something I can never replace 🤍  
-
 No matter where life takes us...  
 you will always be part of my story 🌙  
-
 Happy Birthday ❤️✨
     `;
 
