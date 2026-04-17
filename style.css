@@ -572,7 +572,7 @@ html, body {
 /* 🔥 FINAL MESSAGE BUTTON (RIGHT SIDE) */
 .final-btn {
     position: fixed;
-    bottom: 100px;
+    bottom: 350px;
     right: 20px;
 
     padding: 12px 20px;
@@ -588,7 +588,7 @@ html, body {
 /* 🔥 BACK BUTTON (LEFT SIDE) */
 .back-btn-fixed {
     position: fixed;
-    bottom: 100px;
+    bottom: 350px;
     left: 20px;
 
     padding: 12px 20px;
