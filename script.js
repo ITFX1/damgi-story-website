@@ -258,7 +258,10 @@ function typeWriterEffect(text, elementId, speed = 5) {
         if (i < text.length) {
             el.innerHTML += text.charAt(i);
             i++;
-            setTimeout(typing, speed);
+
+            requestAnimationFrame(() => {
+                setTimeout(typing, speed);
+            });
         }
     }
 
