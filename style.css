@@ -434,28 +434,22 @@ button { font-size: 16px; }
     width: 90%;
     margin-top: 20px;
 }
+/* 🔥 TITLE HEJURU YA SCREEN */
 .birthday-title {
     position: fixed;
-    top: calc(50px + env(safe-area-inset-top));
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
 
     text-align: center;
+    font-size: 26px;
+    font-weight: bold;
 
-    font-size: 36px; /* 🔥 BIG */
-    font-weight: 900;
-    letter-spacing: 2px;
-    color: transparent;
-
-    /* 🔥 GLOW EFFECT */
-    text-shadow: 
-        0 0 10px rgba(255,255,255,0.8),
-        0 0 20px rgba(255,77,136,0.7),
-        0 0 30px rgba(255,77,136,0.6);
+    color: white;
+    text-shadow: 0 0 10px black;
 
     z-index: 9999;
-
-    animation: fadeSlide 1.5s ease;
+    animation: fadeSlide 2s ease;
 }
 
 .birthday-gallery img {
