@@ -457,23 +457,6 @@ button { font-size: 16px; }
 
     animation: fadeSlide 1.5s ease;
 }
-    
-    .main-text {
-    font-size: 40px;
-    font-weight: bold;
-
-    background: linear-gradient(45deg, #ff4d88, #ff99cc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow: 0 0 15px rgba(255,77,136,0.6);
-    }
-    .date {
-    font-size: 22px;
-    color: #00ffcc; /* 🔥 cyan neza */
-    text-shadow: 0 0 10px rgba(0,255,204,0.7);
-    }
-
 
 .birthday-gallery img {
     width: 100%;
