@@ -373,10 +373,7 @@ button { font-size: 16px; }
 .birthday-content {
     animation: fadeIn 1s ease;
 }
-#birthdayText {
-    white-space: pre-line;
-    line-height: 1.8;
-}
+
 /* ===== BIRTHDAY GALLERY ===== */
 .birthday-gallery {
     display: grid;
@@ -478,16 +475,22 @@ button { font-size: 16px; }
 }
 
 #birthdayText {
-    font-size: 30px; /* 🔥 same as chapter */
+    font-size: 32px !important;
     line-height: 2.2;
-    max-width: 95%;
+    font-weight: 500;
+
+    width: 100%;
+    max-width: 700px;
+
     margin: auto;
-    margin-top: 15px;
+    margin-top: 20px;
+
+    padding: 20px;
 
     text-align: left;
-    padding: 18px;
 
     white-space: pre-line;
+
     overflow-y: auto;
     max-height: 70vh;
 }
@@ -554,16 +557,16 @@ html, body {
     display: none;
 }
 .controls {
-    position: static;
-    bottom: 80px; /* 🔥 yazamutse neza */
+    position: fixed; /* 🔥 FIX */
+    bottom: 40px;
     left: 0;
     width: 100%;
-    
-    display: flex;
-    justify-content: center;
-    gap: 15px;
 
-    z-index: 99999; /* 🔥 hejuru ya byose */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    z-index: 99999;
 }
 
 .controls button {
@@ -604,7 +607,8 @@ html, body {
     position: fixed;
     bottom: 350px;
     right: 20px;
-
+    background: linear-gradient(45deg, #ff4d88, #ff99cc);
+    box-shadow: 0 0 15px rgba(255,77,136,0.6);
     padding: 12px 20px;
     border-radius: 25px;
     background: #ff4d88;
@@ -620,7 +624,8 @@ html, body {
     position: fixed;
     bottom: 350px;
     left: 20px;
-
+    background: linear-gradient(45deg, #00ffcc, #66ffe0);
+    box-shadow: 0 0 15px rgba(0,255,204,0.6);
     padding: 12px 20px;
     border-radius: 25px;
     background: #00ffcc;
