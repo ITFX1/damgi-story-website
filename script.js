@@ -307,9 +307,7 @@ function startSlider() {
         setInterval(() => {
     i = (i + 1) % images.length;
     img.src = images[i];
-}, 20000);
-
-    }, 3500);
+}, 3500);
 }
 
 /* ================= BIRTHDAY SYSTEM ================= */
