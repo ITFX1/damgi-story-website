@@ -301,17 +301,13 @@ function startSlider() {
     let i = 0;
     let img = document.getElementById("slideImg");
 
-    if (!img) return; // 🔥 safety fix
+    if (!img) return;
 
     setInterval(() => {
-
-        setInterval(() => {
-    i = (i + 1) % images.length;
-    img.src = images[i];
-}, 3500);
+        i = (i + 1) % images.length;
+        img.src = images[i];
+    }, 3500);
 }
-                }                
-
 /* ================= BIRTHDAY SYSTEM ================= */
 
 /* STEP 1 */
