@@ -280,7 +280,7 @@ function startSlider() {
         "https://res.cloudinary.com/dn0250gby/image/upload/v1776503310/received_162515422709270_jnp5df.jpg",
         "https://res.cloudinary.com/dn0250gby/image/upload/v1776503302/received_368102514725438_o9kyg0.jpg",
         "https://res.cloudinary.com/dn0250gby/image/upload/v1776503301/pic3_1_vhow6z.jpg",
-        "https://res.cloudinary.com/dn0250gby/image/upload/v1776503302/received_415687806515219_ujexll.jpg"
+        "https://res.cloudinary.com/dn0250gby/image/upload/v1776503302/received_415687806515219_ujexll.jpg",
         "https://res.cloudinary.com/dn0250gby/image/upload/v1776503301/received_523320575412603_lt5zgl.jpg",
         "https://res.cloudinary.com/dn0250gby/image/upload/v1776503306/received_1425877781110264_kd4e6b.jpg",
         "https://res.cloudinary.com/dn0250gby/image/upload/v1776503299/pic9_1_qkbs7g.jpg",
