@@ -400,13 +400,101 @@ function openFinalMessage() {
     `;
 
     let message = `
-Today is not just your birthday... 🎂  
-it's a reminder of how special you are ❤️  
-Through every memory... every moment...  
-you have been something I can never replace 🤍  
-No matter where life takes us...  
-you will always be part of my story 🌙  
-Happy Birthday ❤️✨
+🎉 Happy Birthday ❤️✨
+
+Uyu munsi si umunsi usanzwe… ni umunsi wihariye Imana yaremeyeho umuntu udasanzwe 🤍
+Ni umunsi wibutsa isi ko hari umutima mwiza, uciye bugufi, ufite urukundo rurenze amagambo 💖
+
+“Uwiteka aguhe umugisha, akurinde;
+Uwiteka akumurikire mu maso he, akugirire neza;
+Uwiteka akwerekezeho amaso ye, aguhe amahoro.” (Kubara 6:24-26) ✨
+
+Ndashimira Imana kuba yarakuremye uko uri… kuko nta wundi umeze nkawe 🌹
+Umutima wawe, uburyo wiyitaho, n’ukuntu ubasha kuzana ituze aho uri hose… ni impano idasanzwe 💎
+
+“Icyo Imana yaguteguriye ni cyiza kuruta uko ubitekereza.” (Yeremiya 29:11) 🌅
+Kuko ifite imigambi yo kuguhesha amahoro, si iyo kuguteza ibyago… ahubwo ni iyo kuguha ejo hazaza heza n’icyizere 🤍
+
+Uyu mwaka mushya w’ubuzima bwawe, nkwifurije:
+– ibyishimo bitagira iherezo 😊
+– amahoro y’umutima aturuka ku Mana 🤍
+– n’inzira zifunguka aho utatekerezaga 🚪✨
+
+“Uwiringiye Uwiteka azahabwa imbaraga nshya;
+azazamuka nk’inyoni ifite amababa nk’ay’inkona.” (Yesaya 40:31) 🕊️
+
+Niba hari ibihe byakomeye wanyuzemo… Imana yarabibonye 🤍
+Niba hari amarira wigeze gusuka… yarayazi 💧
+Kandi niba hari ibyo wifuza ku mutima wawe… izabigusubiza mu gihe cyayo cyiza ⏳✨
+
+“Uwiteka ari hafi y’abafite imitima imenetse,
+akiza abafite umutima ushengutse.” (Zaburi 34:18) 💖
+
+Uyu munsi ndagusengera 🙏🏾
+Ko Imana yakurinda, ikakuyobora mu nzira zayo nziza 🌿
+Ko yakongera imbaraga aho wacitse intege 💪
+Ko yakuzuza urukundo rwayo rutagabanuka ❤️
+
+Kandi n’iyo ubuzima bwagutwara ahandi…
+n’iyo ibintu bihinduka…
+hari ukuri kumwe kudahinduka 🤍
+
+Ko uri umuntu w’agaciro 💎
+Ko uri uw’ingenzi 🌹
+Kandi ko uri umwe mu bantu batuma isi iba nziza kurushaho 🌍✨
+
+“Urukundo rurihangana, rukagira neza…
+ntirugira ishyari… ntirwishyira hejuru…
+ruba byose, rwizera byose, rwirengagiza byose.” (1 Abakorinto 13:4-7) ❤️
+
+Nkwifurije ko urukundo ruzaguhora hafi 🤍
+Ko amahirwe azagukurikira aho ujya hose 🌟
+Kandi ko ejo hazaza hawe huzaba heza kurusha uyu munsi 🌅
+
+Happy Birthday once again 🎂🎉
+N’uyu munsi… n’ibihe byose biri imbere…
+uzahore uri umuntu w’agaciro gakomeye 🤍✨
+
+— ❤️
+🌿 Impanuro Ziturutse ku Mutima ❤️📖
+
+Ubuzima ni urugendo rurerure… rufite ibyishimo 😊 n’ibigeragezo 💔. Niyo mpamvu nifuje kugusigira amagambo make y’impanuro azagufasha aho uzaba uri hose mu buzima.
+
+1. Jya uhora wibuka agaciro kawe 🤍
+“Uri uw’igiciro cyinshi mu maso yanjye, urahambaye, kandi ndagukunda.” (Yesaya 43:4)
+Ntuzigere wemera ko hari ikigutesha agaciro. Waremwe mu buryo budasanzwe, kandi ubuzima bwawe bufite intego.
+
+2. Jya wiringira Imana mu byose 🙏🏾
+“Wiringire Uwiteka n’umutima wawe wose, we kwishingikiriza ku buhanga bwawe bwite.” (Imigani 3:5-6)
+Hari igihe ibintu bitagenda uko ubishaka, ariko ukwizera kwawe niko kuzaguhagarika.
+
+3. Jya ugira umutima wihangana 💪🏾
+“Abihangana ni bo bazaragwa ubugingo.” (Matayo 24:13)
+Ibihe bibi biraza bikagenda… ariko kwihangana ni byo bituma ugera kure.
+
+4. Jya uhitamo urukundo aho guhitamo inzangano ❤️
+“Urukundo rurihangana, rugira neza… ntirugira ishyari.” (1 Abakorinto 13:4)
+N’iyo wababara, jya uhitamo urukundo. Ni rwo rutsinda byose.
+
+5. Jya uharanira kuba umuntu mwiza kurusha ejo hawe 🌱
+“Ntimukigane n’iby’iyi si, ahubwo muhindurwe rwose n’uko muhinduka mu mitima yanyu.” (Abaroma 12:2)
+Iterambere nyaryo ni iryo mu mutima no mu mitekerereze.
+
+6. Ntuzigere utakaza icyizere 🌅
+“Kuko nzi imigambi mbagirira… ni imigambi y’amahoro si iy’ibibi.” (Yeremiya 29:11)
+Ejo hawe hari ibyiza byinshi, nubwo uyu munsi utabibona neza.
+
+---
+
+💭 Ijambo risoza
+
+Izi si amagambo gusa… ni ibintu nifuza ko byakubera urumuri mu nzira yawe ✨.
+Aho uzajya hose, icyo uzakora cyose… jya uhora wibuka ko ubuzima bwawe bufite agaciro, kandi hari impamvu uri hano kuri iyi si 🌍❤️
+
+Kandi n’iyo twaba tutari hafi…
+ndakwifuriza ibyiza byose mu buzima 🤍🌙
+
+— With care ❤️
     `;
 
     typeWriterEffect(message, "birthdayText", speed = 5);
