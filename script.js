@@ -301,6 +301,7 @@ function startSlider() {
         "https://res.cloudinary.com/dn0250gby/image/upload/v1778517680/ecb18d0ce3564fe5b59775bae8e08054_x2b7zf.jpg",
         "https://res.cloudinary.com/dn0250gby/image/upload/v1781458025/1a912842b16942f791c1539b79fb87d2_qtjyuy.jpg",
         "https://res.cloudinary.com/dn0250gby/image/upload/v1781458637/0d6015a8595c4d6d97dba87eb1726bb8_rgmpas.jpg",
+        "https://res.cloudinary.com/dn0250gby/image/upload/v1781458794/716a89bbdc204956b623b048ce9ac93e_htw2j3.jpg",
 
     ];
 
